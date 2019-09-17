@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        section.swiper-container {
+            width: 100%;
+            height: 70%;
+        }
+
+        section.swiper-container .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .bg_img {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 70vh;
+        }
+
+        #festival01 {
+            background-image: url(https://images.pexels.com/photos/1070981/pexels-photo-1070981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        }
+
+        #festival02 {
+            background-image: url(https://images.pexels.com/photos/1719572/pexels-photo-1719572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        }
+
+        #festival03 {
+            background-image: url(https://images.pexels.com/photos/2784383/pexels-photo-2784383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+        </div>
+    </header>
+    <!-- Swiper -->
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg_img" id="festival01">Slide 1</div>
+                <div class="swiper-slide bg_img" id="festival02">Slide 2</div>
+                <div class="swiper-slide bg_img" id="festival03">Slide 3</div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+    </section>
+    <section>
+        <div class="stree_container">
+            <div class="stree_text"></div>
+            <div class="stree_img"></div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
